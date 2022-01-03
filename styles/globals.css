@@ -1,3 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+
+::-webkit-scrollbar {
+  width: 4px;
+  visibility: hidden;
+}
+::-webkit-scrollbar-track {
+  width: 6px;
+  visibility: hidden;
+}
+::-webkit-scrollbar-thumb {
+  background: #b2b1b9;
+  border-radius: 24px;
+  visibility: hidden;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .menu-link {
+    @apply text-slate-600  w-full text-sm pl-2 font-medium h-full flex items-center
+    border-0;
+  }
+}
